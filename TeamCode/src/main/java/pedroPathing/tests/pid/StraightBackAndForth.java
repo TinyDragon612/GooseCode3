@@ -1,4 +1,4 @@
-package pedroPathing.tuners_tests.pid;
+package pedroPathing.tests.pid;
 
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.config.Config;
@@ -34,7 +34,7 @@ import pedroPathing.constants.LConstants;
 public class StraightBackAndForth extends OpMode {
     private Telemetry telemetryA;
 
-    public static double DISTANCE = 40;
+    public static final double DISTANCE = 40;
 
     private boolean forward = true;
 

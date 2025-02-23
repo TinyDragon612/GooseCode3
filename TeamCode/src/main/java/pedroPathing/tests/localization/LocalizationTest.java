@@ -1,4 +1,4 @@
-package pedroPathing.tuners_tests.localization;
+package pedroPathing.tests.localization;
 
 import static com.pedropathing.follower.FollowerConstants.leftFrontMotorName;
 import static com.pedropathing.follower.FollowerConstants.leftRearMotorName;
@@ -48,9 +48,8 @@ public class LocalizationTest extends OpMode {
     private DcMotorEx leftRear;
     private DcMotorEx rightFront;
     private DcMotorEx rightRear;
-    private List<DcMotorEx> motors;
 
-    /**
+	/**
      * This initializes the PoseUpdater, the mecanum drive motors, and the FTC Dashboard telemetry.
      */
     @Override
@@ -69,7 +68,7 @@ public class LocalizationTest extends OpMode {
         rightFront.setDirection(rightFrontMotorDirection);
         rightRear.setDirection(rightRearMotorDirection);
 
-        motors = Arrays.asList(leftFront, leftRear, rightFront, rightRear);
+		List <DcMotorEx> motors = Arrays.asList(leftFront, leftRear, rightFront, rightRear);
 
         for (DcMotorEx motor : motors) {
             MotorConfigurationType motorConfigurationType = motor.getMotorType().clone();

@@ -1,4 +1,4 @@
-package pedroPathing.tuners_tests.localization;
+package pedroPathing.tunners.localization;
 
 import com.acmerobotics.dashboard.FtcDashboard;
 import com.acmerobotics.dashboard.config.Config;
@@ -36,7 +36,7 @@ public class TurnTuner extends OpMode {
 
     private Telemetry telemetryA;
 
-    public static double ANGLE = 2 * Math.PI;
+    public static final double ANGLE = 2 * Math.PI;
 
     /**
      * This initializes the PoseUpdater as well as the FTC Dashboard telemetry.

@@ -1,4 +1,4 @@
-package pedroPathing.tuners_tests.localization;
+package pedroPathing.tests.localization;
 
 import static com.pedropathing.follower.FollowerConstants.leftFrontMotorDirection;
 import static com.pedropathing.follower.FollowerConstants.leftFrontMotorName;
@@ -34,9 +34,8 @@ public class MotorDirections extends OpMode {
     private DcMotorEx leftRear;
     private DcMotorEx rightFront;
     private DcMotorEx rightRear;
-    private List<DcMotorEx> motors;
 
-    @Override
+	@Override
     public void init() {
         Constants.setConstants(FConstants.class, LConstants.class);
 
@@ -49,7 +48,7 @@ public class MotorDirections extends OpMode {
         rightFront.setDirection(rightFrontMotorDirection);
         rightRear.setDirection(rightRearMotorDirection);
 
-        motors = Arrays.asList(leftFront, leftRear, rightFront, rightRear);
+		List <DcMotorEx> motors = Arrays.asList(leftFront, leftRear, rightFront, rightRear);
 
         for (DcMotorEx motor : motors) {
             MotorConfigurationType motorConfigurationType = motor.getMotorType().clone();
